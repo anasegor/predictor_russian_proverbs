@@ -1,17 +1,15 @@
 # The predictor of Russian proverbs
-### Point: 
-##### Input: description of the "essence" of the proverb
-##### Output: a suitable Russian-language proverb
 
-The model performs the task of classifying the description to a more appropriate proverb from its own dataset.The model does not generate new proverbs.
+Input: description of the "essence" of the proverb
+Output: a suitable Russian-language proverb
 
-Example:
+The model performs the task of classifying the description to a more appropriate proverb from its own dataset. The model does not generate new proverbs.
 
-Input: "Сначала хорошо подумай, а потом делай"
+**Example:**   
+**Input: "Сначала хорошо подумай, а потом делай"**   
+**Output: "Семь раз отмерь, один раз отрежь"**   
 
-Output: "Семь раз отмерь, один раз отрежь"
-
-### Model: 
+## Model: 
 Pre-training BERT for task of sequence classification.
-### Dataset: 
-Own dataset consisting of 100 popular Russian sayings (classes) and 300 descriptions to them (1 description consists of 1 sentence).
+## Dataset: 
+Own dataset consisting of 100 popular Russian sayings (classes) and ~300 descriptions to them (1 description consists of 1 sentence).
